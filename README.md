@@ -73,7 +73,7 @@ yum install nodejs git screen -y
 
 #下载项目源码
 ```
-git clone https://github.com/malaohu/forsaken-mail.git
+git clone https://github.com/beiona/forsaken-mail.git
 cd forsaken-mail
 ```
 
