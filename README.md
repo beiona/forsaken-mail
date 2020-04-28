@@ -171,3 +171,42 @@ tls参数会自动帮你签发ssl证书，如果你要使用自己的ssl，改�
 ```
 最后可以打开https://xx.com访问了。
 
+开放25。3000两个端口
+1、安装NPM
+#Centos系统
+```
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+yum install nodejs git screen -y
+```
+
+2、安装Forsaken Mail
+#下载项目源码
+```
+git clone https://github.com/beiona/forsaken-mail.git
+cd forsaken-mail
+```
+
+#安装项目需要的库
+```
+npm install
+```
+
+#安装pm2工具
+```
+npm install -g pm2
+```
+
+#启动项目
+```
+pm2 start bin/www
+```
+
+#设置开机启动
+```
+pm2 startup
+pm2 save
+```
+
+dns解析
+a类型 mail。域名。com 解析到ip
+mx类型 mail。域名。com 解析到 mail。域名。com
