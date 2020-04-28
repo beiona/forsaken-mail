@@ -208,5 +208,7 @@ pm2 save
 ```
 
 dns解析
+
 a类型 mail。域名。com 解析到ip
+
 mx类型 mail。域名。com 解析到 mail。域名。com
